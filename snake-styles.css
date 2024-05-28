@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aec289;
+    display: flex;
+    justify-content: center; /* Center the content horizontally*/
+    align-items: center; /* Center the content vertically*/
+    flex-direction: column; /* Arranges the children of the body in a column*/
+    height: 100vh;
+    margin: 0;
+    color: #f4f1e9;
+}
+.snake-image {
+    height: auto;
+    max-width: 20%;
+}
+#start-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally*/
+    align-items: center; /* Center the content vertically*/
+    flex-direction: column; /* Arranges the children of the body in a column*/
+    height: 100vh;
+    margin: 0;
+    color: #f4f1e9;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+button[type='submit'] {
+    display: block;
+    margin: 60px auto;
+    font-size: 20px;
+    padding: 5px;
+    width: 140px;
+    background-color: #688f4e;
+    color: #f4f1e9;
+    border-color: #f4f1e9;;
+}
+
+ .box {
+    width: 500px;
+    height: 500px;
+    border: 3px solid #2b463c;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diamond-image {
+    max-width: 5%;
+    height: auto;
+    margin-left: 0;
+}
+
+#diamond-count {
+    font-size: 18px;
+    margin-left: 1%;
+    position: relative; /* Added for relative positioning */
+    top: -5px; /* Adjust this value as needed to move the element higher */
+}
+
