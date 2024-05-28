@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const startContainer = document.getElementById('start-container');
     const startInput = document.getElementById('start-button');
     let diamondCount = document.getElementById('diamond-count');
+    let bestScore = document.getElementById('best-score');
+    
 
     //board initialization
     var board = document.getElementById('board');
@@ -35,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var gameOver = false;
     var gameInterval;
     var numDiamonds = 0;
-
-    var bestScore = 0;
 
     var diamondImage = new Image();
     diamondImage.src = './diamond2-photo.png';
@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
         startContainer.style.display = 'block';
         context.fillStyle = "black";
         context.fillRect(0, 0, board.width, board.height);
-        if (numDiamonds > bestScore) {
-            bestScore = numDiamonds;
+        if (numDiamonds > bestScore.textContent) {
+            bestScore.textContent = numDiamonds;
         }
         numDiamonds = 0;
         velocityX = 0;

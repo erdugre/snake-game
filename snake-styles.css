@@ -52,13 +52,19 @@ button[type='submit'] {
 .diamond-image {
     max-width: 5%;
     height: auto;
-    margin-left: 0;
+    margin-left: 6%;
+    position: relative; /* Added for relative positioning */
+    top: 5px; /* Adjust this value as needed to move the element higher */
 }
 
 #diamond-count {
     font-size: 18px;
     margin-left: 1%;
-    position: relative; /* Added for relative positioning */
-    top: -5px; /* Adjust this value as needed to move the element higher */
+
+}
+
+#best-score-table {
+    margin-left: 62%;
+
 }
 
