@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var numDiamonds = 0;
 
     var diamondImage = new Image();
-    diamondImage.src = '/Users/elanilerdugrul/Desktop/Big Girl Job/Yes leet queen/SnakeGame/sources/diamond2-photo.png';
+    diamondImage.src = './diamond2-photo.png';
 
 
     startInput.addEventListener('click', () => {
